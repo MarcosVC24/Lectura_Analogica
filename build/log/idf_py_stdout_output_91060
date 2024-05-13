@@ -1,0 +1,468 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403784f2
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May 10 2024 10:48:52[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0ece8h ( 60648) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001ed10 vaddr=3fc92f00 size=01308h (  4872) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1cbbch (117692) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=0003cbe4 vaddr=3fc94208 size=01678h (  5752) load[0m
+[0;32mI (156) esp_image: segment 4: paddr=0003e264 vaddr=40374000 size=0eeb8h ( 61112) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     danalogico[0m
+[0;32mI (212) cpu_start: App version:      1[0m
+[0;32mI (216) cpu_start: Compile time:     May 10 2024 10:48:34[0m
+[0;32mI (222) cpu_start: ELF file SHA256:  9ae3efd5d...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (233) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC96188 len 00053588 (333 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (279) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (290) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (294) spi_flash: flash io: opi_str[0m
+[0;33mW (299) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (319) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (326) main_task: Started on CPU0[0m
+[0;32mI (336) main_task: Calling app_main()[0m
+[0;32mI (336) EJERCICIO: adc_pattern[0].atten is :0[0m
+[0;32mI (336) EJERCICIO: adc_pattern[0].channel is :4[0m
+[0;32mI (346) EJERCICIO: adc_pattern[0].unit is :0[0m
+[0;32mI (346) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (356) EJERCICIO: Se ha generado la primera configuración correctamente[0m
+[0;32mI (756) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (756) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (1166) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1166) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (1576) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1576) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (1986) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1986) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (2396) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2396) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (2806) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2806) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (3216) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3216) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (3626) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3626) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (4036) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4036) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (4446) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4446) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (4856) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4856) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (5266) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5266) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (5676) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5676) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (6086) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6086) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (6496) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6496) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (6906) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6906) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (7316) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7316) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (7726) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7726) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (8136) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8136) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (8546) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8546) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (8956) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8956) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (9366) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9366) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (9776) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9776) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (10186) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (10186) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4073, Voltage: 0.975[0m
+[0;32mI (10596) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (10596) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (11006) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (11006) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (11416) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (11416) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (11826) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (11826) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4027, Voltage: 0.964[0m
+[0;32mI (12236) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (12236) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (12646) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (12646) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (13056) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (13056) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (13466) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (13466) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (13876) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (13876) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (14286) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (14286) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (14696) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (14696) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (15106) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (15106) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (15516) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (15516) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (15926) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (15926) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (16336) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (16336) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (16746) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (16746) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (17156) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (17156) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (17566) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (17566) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (17976) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (17976) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (18386) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (18386) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4055, Voltage: 0.970[0m
+[0;32mI (18796) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (18796) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (19206) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (19206) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (19616) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (19616) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (20026) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (20026) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (20436) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (20436) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3707, Voltage: 0.887[0m
+[0;32mI (20846) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (20846) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (21256) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (21256) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (21666) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (21666) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3699, Voltage: 0.885[0m
+[0;32mI (22076) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (22076) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3736, Voltage: 0.894[0m
+[0;32mI (22486) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (22486) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3711, Voltage: 0.888[0m
+[0;32mI (22896) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (22896) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3717, Voltage: 0.890[0m
+[0;32mI (23306) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (23306) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3702, Voltage: 0.886[0m
+[0;32mI (23716) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (23716) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3717, Voltage: 0.890[0m
+[0;32mI (24126) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (24126) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3707, Voltage: 0.887[0m
+[0;32mI (24536) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (24536) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3707, Voltage: 0.887[0m
+[0;32mI (24946) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (24946) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2885, Voltage: 0.690[0m
+[0;32mI (25356) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (25356) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3735, Voltage: 0.894[0m
+[0;32mI (25766) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (25766) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3708, Voltage: 0.887[0m
+[0;32mI (26176) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (26176) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3700, Voltage: 0.885[0m
+[0;32mI (26586) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (26586) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (26996) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (26996) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3551, Voltage: 0.850[0m
+[0;32mI (27406) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (27406) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (27816) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (27816) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (28226) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (28226) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3688, Voltage: 0.883[0m
+[0;32mI (28636) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (28636) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3633, Voltage: 0.869[0m
+[0;32mI (29046) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (29046) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3710, Voltage: 0.888[0m
+[0;32mI (29456) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (29456) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3711, Voltage: 0.888[0m
+[0;32mI (29866) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (29866) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3720, Voltage: 0.890[0m
+[0;32mI (30276) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (30276) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3710, Voltage: 0.888[0m
+[0;32mI (30686) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (30686) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3705, Voltage: 0.887[0m
+[0;32mI (31096) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (31096) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3710, Voltage: 0.888[0m
+[0;32mI (31506) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (31506) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3717, Voltage: 0.890[0m
+[0;32mI (31916) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (31916) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (32326) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (32326) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3656, Voltage: 0.875[0m
+[0;32mI (32736) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (32736) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3710, Voltage: 0.888[0m
+[0;32mI (33146) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (33146) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3707, Voltage: 0.887[0m
+[0;32mI (33556) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (33556) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3717, Voltage: 0.890[0m
+[0;32mI (33966) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (33966) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3706, Voltage: 0.887[0m
+[0;32mI (34376) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (34376) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3711, Voltage: 0.888[0m
+[0;32mI (34786) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (34786) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3710, Voltage: 0.888[0m
+[0;32mI (35196) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (35196) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3725, Voltage: 0.891[0m
+[0;32mI (35606) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (35606) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3707, Voltage: 0.887[0m
+[0;32mI (36016) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (36016) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3717, Voltage: 0.890[0m
+[0;32mI (36426) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (36426) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3712, Voltage: 0.888[0m
+[0;32mI (36836) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (36836) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3707, Voltage: 0.887[0m
+[0;32mI (37246) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (37246) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (37656) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (37656) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3706, Voltage: 0.887[0m
+[0;32mI (38066) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (38066) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3711, Voltage: 0.888[0m
+[0;32mI (38476) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (38476) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (38886) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (38886) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3671, Voltage: 0.879[0m
+[0;32mI (39296) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (39296) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3711, Voltage: 0.888[0m
+[0;32mI (39706) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (39706) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3707, Voltage: 0.887[0m
+[0;32mI (40116) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (40116) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (40526) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (40526) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3711, Voltage: 0.888[0m
+[0;32mI (40936) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (40936) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3710, Voltage: 0.888[0m
+[0;32mI (41346) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (41346) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3706, Voltage: 0.887[0m
+[0;32mI (41756) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (41756) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3710, Voltage: 0.888[0m
+[0;32mI (42166) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (42166) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3711, Voltage: 0.888[0m
+[0;32mI (42576) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (42576) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3708, Voltage: 0.887[0m
+[0;32mI (42986) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (42986) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (43396) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (43396) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3739, Voltage: 0.895[0m
+[0;32mI (43806) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (43806) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3645, Voltage: 0.872[0m
+[0;32mI (44216) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (44216) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3795, Voltage: 0.908[0m
+[0;32mI (44626) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (44626) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3711, Voltage: 0.888[0m
+[0;32mI (45036) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (45036) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3701, Voltage: 0.886[0m
+[0;32mI (45446) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (45446) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3711, Voltage: 0.888[0m
+[0;32mI (45856) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (45856) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3710, Voltage: 0.888[0m
+[0;32mI (46266) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (46266) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3719, Voltage: 0.890[0m
+[0;32mI (46676) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (46676) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3845, Voltage: 0.920[0m
+[0;32mI (47086) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (47086) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3775, Voltage: 0.903[0m
+[0;32mI (47496) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (47496) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3701, Voltage: 0.886[0m
+[0;32mI (47906) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (47906) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3702, Voltage: 0.886[0m
+[0;32mI (48316) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (48316) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (48726) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (48726) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3719, Voltage: 0.890[0m
+[0;32mI (49136) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (49136) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3707, Voltage: 0.887[0m
+[0;32mI (49546) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (49546) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (49956) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (49956) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (50366) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (50366) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3434, Voltage: 0.822[0m
+[0;32mI (50776) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (50776) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3727, Voltage: 0.892[0m
+[0;32mI (51186) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (51186) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3686, Voltage: 0.882[0m
+[0;32mI (51596) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (51596) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (52006) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (52006) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3709, Voltage: 0.888[0m
+[0;32mI (52416) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (52416) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3705, Voltage: 0.887[0m
+[0;32mI (52826) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (52826) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3707, Voltage: 0.887[0m
+[0;32mI (53236) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (53236) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3708, Voltage: 0.887[0m
+[0;32mI (53646) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (53646) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3751, Voltage: 0.898[0m
+[0;32mI (54056) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (54056) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3724, Voltage: 0.891[0m
+[0;32mI (54466) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (54466) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3687, Voltage: 0.882[0m
+[0;32mI (54876) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (54876) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3747, Voltage: 0.897[0m
+[0;32mI (55286) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (55286) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3707, Voltage: 0.887[0m
+[0;32mI (55696) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (55696) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3717, Voltage: 0.890[0m
+[0;32mI (56106) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (56106) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3721, Voltage: 0.890[0m
+[0;32mI (56516) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (56516) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3791, Voltage: 0.907[0m
+[0;32mI (56926) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (56926) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3717, Voltage: 0.890[0m
+[0;32mI (57336) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (57336) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3701, Voltage: 0.886[0m
+[0;32mI (57746) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (57746) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3699, Voltage: 0.885[0m
+[0;32mI (58156) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (58156) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3547, Voltage: 0.849[0m
+[0;32mI (58566) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (58566) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3282, Voltage: 0.785[0m
+[0;32mI (58976) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (58976) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3319, Voltage: 0.794[0m
+[0;32mI (59386) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (59386) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 3711, Voltage: 0.888[0m
+[0;32mI (59796) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (59796) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (60206) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (60206) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (60616) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (60616) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4069, Voltage: 0.974[0m
+[0;32mI (61026) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (61026) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (61436) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (61436) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (61846) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (61846) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (62256) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (62256) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (62666) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (62666) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (63076) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (63076) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (63486) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (63486) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (63896) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (63896) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (64306) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (64306) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (64716) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (64716) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (65126) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (65126) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (65536) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (65536) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (65946) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (65946) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (66356) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (66356) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (66766) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (66766) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (67176) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (67176) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (67586) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (67586) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (67996) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (67996) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (68406) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (68406) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (68816) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (68816) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (69226) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (69226) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (69636) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (69636) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (70046) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (70046) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (70456) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (70456) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (70866) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (70866) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (71276) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (71276) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (71686) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (71686) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (72096) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (72096) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (72506) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (72506) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (72916) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (72916) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (73326) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (73326) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (73736) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (73736) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (74146) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (74146) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (74556) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (74556) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4045, Voltage: 0.968[0m
+[0;32mI (74966) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (74966) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (75376) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (75376) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (75786) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (75786) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (76196) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (76196) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (76606) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (76606) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (77016) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (77016) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (77426) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (77426) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (77836) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (77836) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (78246) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (78246) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (78656) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (78656) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (79066) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (79066) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (79476) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (79476) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (79886) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (79886) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (80296) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (80296) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (80706) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (80706) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (81116) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (81116) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (81526) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (81526) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (81936) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (81936) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (82346) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (82346) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (82756) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (82756) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m
+[0;32mI (83166) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (83166) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4095, Voltage: 0.980[0m

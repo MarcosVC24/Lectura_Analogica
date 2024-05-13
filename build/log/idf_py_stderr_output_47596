@@ -1,0 +1,112 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40056f5c: memcpy in ROM
+[0m
+[0;33m0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+[0m
+[0;33m0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x403759ca: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x4037aae1: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40380e79: abort at /home/marcos/Esp32/esp-idf/components/newlib/abort.c:38
+0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+0x42008663: app_main at /home/marcos/Esp32/danalogico/main/danalogico.c:85
+0x4201bcaf: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037b449: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+[0m
+[0;33m0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x403759ca: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x4037aae1: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40380e79: abort at /home/marcos/Esp32/esp-idf/components/newlib/abort.c:38
+0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+0x42008663: app_main at /home/marcos/Esp32/danalogico/main/danalogico.c:85
+0x4201bcaf: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037b449: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+[0m
+[0;33m0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x403759ca: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x4037aae1: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40380e79: abort at /home/marcos/Esp32/esp-idf/components/newlib/abort.c:38
+0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+0x42008663: app_main at /home/marcos/Esp32/danalogico/main/danalogico.c:85
+0x4201bcaf: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037b449: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+[0m
+[0;33m0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x403759ca: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x4037aae1: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40380e79: abort at /home/marcos/Esp32/esp-idf/components/newlib/abort.c:38
+0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+0x42008663: app_main at /home/marcos/Esp32/danalogico/main/danalogico.c:85
+0x4201bcaf: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037b449: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+[0m
+[0;33m0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x403759ca: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x4037aae1: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40380e79: abort at /home/marcos/Esp32/esp-idf/components/newlib/abort.c:38
+0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+0x42008663: app_main at /home/marcos/Esp32/danalogico/main/danalogico.c:85
+0x4201bcaf: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037b449: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+[0m
+[0;33m0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x403759ca: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x4037aae1: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40380e79: abort at /home/marcos/Esp32/esp-idf/components/newlib/abort.c:38
+0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+0x42008663: app_main at /home/marcos/Esp32/danalogico/main/danalogico.c:85
+0x4201bcaf: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037b449: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+[0m
+[0;33m0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x403759ca: panic_abort at /home/marcos/Esp32/esp-idf/components/esp_system/panic.c:472
+0x4037aae1: esp_system_abort at /home/marcos/Esp32/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40380e79: abort at /home/marcos/Esp32/esp-idf/components/newlib/abort.c:38
+0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_err.c:50
+0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+0x42008663: app_main at /home/marcos/Esp32/danalogico/main/danalogico.c:85
+0x4201bcaf: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037b449: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375940: esp_restart_noos at /home/marcos/Esp32/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x42008619: adc_init at /home/marcos/Esp32/danalogico/main/danalogico.c:69 (discriminator 1)
+[0m
+[0;33m0x4037aad7: _esp_error_check_failed at /home/marcos/Esp32/esp-idf/components/esp_system/esp_

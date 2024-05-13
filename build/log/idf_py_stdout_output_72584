@@ -1,0 +1,450 @@
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c02002ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403784f2
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May 10 2024 10:48:52[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0ecd8h ( 60632) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001ed00 vaddr=3fc92f00 size=01318h (  4888) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1cb64h (117604) map[0m
+[0;32mI (154) esp_image: segment 3: paddr=0003cb8c vaddr=3fc94218 size=01668h (  5736) load[0m
+[0;32mI (156) esp_image: segment 4: paddr=0003e1fc vaddr=40374000 size=0eeb8h ( 61112) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (207) cpu_start: Project name:     danalogico[0m
+[0;32mI (212) cpu_start: App version:      1[0m
+[0;32mI (216) cpu_start: Compile time:     May 10 2024 10:48:34[0m
+[0;32mI (223) cpu_start: ELF file SHA256:  62bb7790b...[0m
+[0;32mI (228) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (233) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC96188 len 00053588 (333 KiB): RAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (279) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (290) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (294) spi_flash: flash io: opi_str[0m
+[0;33mW (299) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (319) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (326) main_task: Started on CPU0[0m
+[0;32mI (336) main_task: Calling app_main()[0m
+[0;32mI (336) EJERCICIO: adc_pattern[0].atten is :0[0m
+[0;32mI (336) EJERCICIO: adc_pattern[0].channel is :4[0m
+[0;32mI (346) EJERCICIO: adc_pattern[0].unit is :0[0m
+[0;32mI (346) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (356) EJERCICIO: Se ha generado la primera configuración correctamente[0m
+[0;32mI (856) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (856) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1420[0m
+[0;32mI (1366) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1366) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1421[0m
+[0;32mI (1876) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1876) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1414[0m
+[0;32mI (2386) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2386) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (2896) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2896) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1412[0m
+[0;32mI (3406) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3406) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (3916) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3916) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (4426) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4426) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (4936) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4936) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (5446) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5446) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (5956) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5956) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1427[0m
+[0;32mI (6466) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6466) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (6976) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6976) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1414[0m
+[0;32mI (7486) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7486) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (7996) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7996) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (8506) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8506) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1408[0m
+[0;32mI (9016) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9016) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1419[0m
+[0;32mI (9526) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9526) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (10036) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (10036) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (10546) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (10546) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (11056) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (11056) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1414[0m
+[0;32mI (11566) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (11566) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (12076) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (12076) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (12586) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (12586) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (13096) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (13096) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (13606) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (13606) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (14116) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (14116) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1412[0m
+[0;32mI (14626) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (14626) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (15136) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (15136) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1399[0m
+[0;32mI (15646) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (15646) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (16156) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (16156) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (16666) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (16666) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1417[0m
+[0;32mI (17176) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (17176) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (17686) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (17686) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (18196) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (18196) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (18706) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (18706) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1419[0m
+[0;32mI (19216) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (19216) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1417[0m
+[0;32mI (19726) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (19726) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (20236) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (20236) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (20746) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (20746) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (21256) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (21256) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1402[0m
+[0;32mI (21766) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (21766) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1403[0m
+[0;32mI (22276) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (22276) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (22786) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (22786) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1414[0m
+[0;32mI (23296) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (23296) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (23806) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (23806) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (24316) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (24316) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1405[0m
+[0;32mI (24826) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (24826) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1447[0m
+[0;32mI (25336) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (25336) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (25846) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (25846) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (26356) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (26356) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (26866) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (26866) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (27376) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (27376) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (27886) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (27886) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1445[0m
+[0;32mI (28396) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (28396) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1406[0m
+[0;32mI (28906) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (28906) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (29416) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (29416) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (29926) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (29926) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1406[0m
+[0;32mI (30436) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (30436) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (30946) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (30946) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1405[0m
+[0;32mI (31456) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (31456) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1395[0m
+[0;32mI (31966) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (31966) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (32476) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (32476) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1401[0m
+[0;32mI (32986) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (32986) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (33496) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (33496) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1382[0m
+[0;32mI (34006) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (34006) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1408[0m
+[0;32mI (34516) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (34516) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1406[0m
+[0;32mI (35026) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (35026) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1408[0m
+[0;32mI (35536) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (35536) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1421[0m
+[0;32mI (36046) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (36046) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1412[0m
+[0;32mI (36556) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (36556) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (37066) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (37066) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1408[0m
+[0;32mI (37576) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (37576) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (38086) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (38086) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1408[0m
+[0;32mI (38596) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (38596) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (39106) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (39106) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1408[0m
+[0;32mI (39616) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (39616) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (40126) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (40126) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1414[0m
+[0;32mI (40636) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (40636) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (41146) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (41146) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (41656) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (41656) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1414[0m
+[0;32mI (42166) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (42166) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1423[0m
+[0;32mI (42676) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (42676) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (43186) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (43186) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (43696) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (43696) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (44206) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (44206) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (44716) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (44716) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (45226) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (45226) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (45736) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (45736) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (46246) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (46246) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1408[0m
+[0;32mI (46756) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (46756) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (47266) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (47266) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (47776) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (47776) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1416[0m
+[0;32mI (48286) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (48286) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1589[0m
+[0;32mI (48796) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (48796) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (49306) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (49306) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1403[0m
+[0;32mI (49816) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (49816) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (50326) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (50326) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (50836) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (50836) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1408[0m
+[0;32mI (51346) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (51346) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1405[0m
+[0;32mI (51856) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (51856) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (52366) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (52366) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (52876) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (52876) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1414[0m
+[0;32mI (53386) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (53386) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1411[0m
+[0;32mI (53896) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (53896) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (54406) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (54406) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (54916) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (54916) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1399[0m
+[0;32mI (55426) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (55426) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1391[0m
+[0;32mI (55936) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (55936) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (56446) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (56446) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (56956) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (56956) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1415[0m
+[0;32mI (57466) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (57466) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1405[0m
+[0;32mI (57976) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (57976) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1416[0m
+[0;32mI (58486) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (58486) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1403[0m
+[0;32mI (58996) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (58996) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1414[0m
+[0;32mI (59506) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (59506) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (60016) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (60016) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (60526) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (60526) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (61036) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (61036) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1414[0m
+[0;32mI (61546) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (61546) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1388[0m
+[0;32mI (62056) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (62056) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1482[0m
+[0;32mI (62566) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (62566) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1407[0m
+[0;32mI (63076) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (63076) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1406[0m
+[0;32mI (63586) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (63586) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1412[0m
+[0;32mI (64096) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (64096) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1413[0m
+[0;32mI (64606) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (64606) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1405[0m
+[0;32mI (65116) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (65116) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1417[0m
+[0;32mI (65626) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (65626) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1399[0m
+[0;32mI (66136) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (66136) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 763[0m
+[0;32mI (66646) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (66646) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1[0m
+[0;32mI (67156) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (67156) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (67666) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (67666) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (68176) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (68176) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (68686) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (68686) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (69196) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (69196) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (69706) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (69706) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (70216) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (70216) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (70726) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (70726) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (71236) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (71236) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (71746) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (71746) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 478[0m
+[0;32mI (72256) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (72256) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 924[0m
+[0;32mI (72766) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (72766) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1443[0m
+[0;32mI (73276) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (73276) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1669[0m
+[0;32mI (73786) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (73786) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1916[0m
+[0;32mI (74296) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (74296) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2073[0m
+[0;32mI (74806) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (74806) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2077[0m
+[0;32mI (75316) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (75316) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2077[0m
+[0;32mI (75826) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (75826) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2075[0m
+[0;32mI (76336) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (76336) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2073[0m
+[0;32mI (76846) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (76846) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2076[0m
+[0;32mI (77356) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (77356) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2073[0m
+[0;32mI (77866) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (77866) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2075[0m
+[0;32mI (78376) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (78376) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2071[0m
+[0;32mI (78886) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (78886) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2075[0m
+[0;32mI (79396) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (79396) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2076[0m
+[0;32mI (79906) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (79906) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2076[0m
+[0;32mI (80416) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (80416) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2074[0m
+[0;32mI (80926) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (80926) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2073[0m
+[0;32mI (81436) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (81436) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2069[0m
+[0;32mI (81946) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (81946) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2075[0m
+[0;32mI (82456) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (82456) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2075[0m
+[0;32mI (82966) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (82966) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 2075[0m
+[0;32mI (83476) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (83476) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (83986) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (83986) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (84496) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (84496) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (85006) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (85006) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (85516) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (85516) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (86026) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (86026) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (86536) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (86536) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (87046) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (87046) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (87556) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (87556) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (88066) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (88066) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (88576) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (88576) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (89086) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (89086) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (89596) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (89596) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (90106) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (90106) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (90616) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (90616) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0[0m
+[0;32mI (91126) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (91126) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1017[0m
+[0;32mI (91636) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (91636) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1390[0m
+[0;32mI (92146) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (92146) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1391[0m
+[0;32mI (92656) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (92656) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1384[0m
+[0;32mI (93166) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (93166) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1383[0m
+[0;32mI (93676) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (93676) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1385[0m
+[0;32mI (94186) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (94186) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1385[0m
+[0;32mI (94696) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (94696) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1384[0m
+[0;32mI (95206) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (95206) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1359[0m
+[0;32mI (95716) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (95716) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1381[0m
+[0;32mI (96226) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (96226) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1379[0m
+[0;32mI (96736) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (96736) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1383[0m
+[0;32mI (97246) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (97246) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1386[0m
+[0;32mI (97756) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (97756) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1385[0m
+[0;32mI (98266) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (98266) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1382[0m
+[0;32mI (98776) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (98776) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 1387[0m

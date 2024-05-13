@@ -18,6 +18,8 @@
 #define ADC_GET_DATA(p_data)	((p_data)->type2.data)
 #define ADC_READ_LENGHT		4
 
+uint16_t contador = 0;
+
 static TaskHandle_t s_task_handle;
 
 static adc_channel_t channels[1] = {ADC_CHANNEL_4}; // Lista dónde estarán contenidos los canales a utilizar
@@ -97,17 +99,23 @@ void app_main(void){
 			while(1){
 				ret = adc_continuous_read(adc_handle, result, ADC_READ_LENGHT, &ret_num, 0);
 				if (ret == ESP_OK){
-					ESP_LOGI("TASK", "ret is %x, ret_num is %"PRIu32" bytes", ret, ret_num);
-					for (int i = 0; i < ret_num; i += SOC_ADC_DIGI_RESULT_BYTES) {
-						adc_digi_output_data_t *p = (adc_digi_output_data_t*)&result[i];
-						uint32_t chan_num = ADC_GET_CHANNEL(p);
-						uint32_t data = ADC_GET_DATA(p);
-						/* Check the channel number validation, the data is invalid if the channel num exceed the maximum channel */
-						if (chan_num < SOC_ADC_CHANNEL_NUM(ADC_UNIT)) {
-							ESP_LOGI(TAG, "Unit: %s, Channel: %"PRIu32", Value: %"PRIu32, unit, chan_num, data);
-						} else {
-							ESP_LOGW(TAG, "Invalid data [%s_%"PRIu32"_%"PRIx32"]", unit, chan_num, data);
+					contador++;
+					if (contador == 40){
+						ESP_LOGI("TASK", "ret is %x, ret_num is %"PRIu32" bytes", ret, ret_num);
+						for (int i = 0; i < ret_num; i += SOC_ADC_DIGI_RESULT_BYTES) {
+							adc_digi_output_data_t *p = (adc_digi_output_data_t*)&result[i];
+							uint32_t chan_num = ADC_GET_CHANNEL(p);
+							uint32_t data = ADC_GET_DATA(p);
+							float voltage = (float)data * 0.98 / 4095.0;
+							/* Check the channel number validation, the data is invalid if the channel num exceed the maximum channel */
+							if (chan_num < SOC_ADC_CHANNEL_NUM(ADC_UNIT)) {
+								ESP_LOGI(TAG, "Unit: %s, Channel: %"PRIu32", Value: %"PRIu32", Voltage: %.3f", unit, chan_num, data,voltage);
+							} else {
+								ESP_LOGW(TAG, "Invalid data [%s_%"PRIu32"_%"PRIx32"]", unit, chan_num, data);
+							}
 						}
+						contador = 0;
+						vTaskDelay(1);
 					}
 					vTaskDelay(1);
 				} else if (ret == ESP_ERR_TIMEOUT) {
