@@ -1,0 +1,18 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/marcos/Esp32/danalogico/build/bootloader/esp-idf/esptool_py && /home/marcos/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/marcos/Esp32/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/marcos/Esp32/danalogico/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/danalogico.c.obj
+/home/marcos/Esp32/danalogico/main/danalogico.c: In function 'adc_init':
+/home/marcos/Esp32/danalogico/main/danalogico.c:41:68: warning: passing argument 3 of 'adc_continuous_channel_to_io' from incompatible pointer type [-Wincompatible-pointer-types]
+   41 |                 adc_continuous_channel_to_io(ADC_UNIT, channels[i],&io_channel);
+      |                                                                    ^~~~~~~~~~~
+      |                                                                    |
+      |                                                                    int **
+In file included from /home/marcos/Esp32/danalogico/main/danalogico.c:8:
+/home/marcos/Esp32/esp-idf/components/esp_adc/include/esp_adc/adc_continuous.h:239:95: note: expected 'int * const' but argument is of type 'int **'
+  239 | esp_err_t adc_continuous_channel_to_io(adc_unit_t unit_id, adc_channel_t channel, int * const io_num);
+      |                                                                                   ~~~~~~~~~~~~^~~~~~
+/home/marcos/Esp32/danalogico/main/danalogico.c:42:40: warning: assignment to 'uint8_t' {aka 'unsigned char'} from 'int *' makes integer from pointer without a cast [-Wint-conversion]
+   42 |                 adc_pattern[i].channel = io_channel;
+      |                                        ^
+[3/7] Linking C static library esp-idf/main/libmain.a

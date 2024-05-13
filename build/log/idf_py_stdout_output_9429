@@ -1,0 +1,5 @@
+[1/4] cd /home/marcos/Esp32/danalogico/build/esp-idf/esptool_py && /home/marcos/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/marcos/Esp32/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/marcos/Esp32/danalogico/build/partition_table/partition-table.bin /home/marcos/Esp32/danalogico/build/danalogico.bin
+danalogico.bin binary size 0x3c1a0 bytes. Smallest app partition is 0x100000 bytes. 0xc3e60 bytes (77%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /home/marcos/Esp32/danalogico/build/bootloader/esp-idf/esptool_py && /home/marcos/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/marcos/Esp32/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/marcos/Esp32/danalogico/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.

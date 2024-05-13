@@ -1,0 +1,46 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x420085bc: app_main at /home/marcos/Esp32/danalogico/main/danalogico.c:71
+[0m
+[0;33m0x4200b51f: task_wdt_timeout_handling at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x4200b93c: task_wdt_isr at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40377245: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x420085b9: app_main at /home/marcos/Esp32/danalogico/main/danalogico.c:69
+0x4201b0ab: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037b395: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4200b51f: task_wdt_timeout_handling at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x4200b93c: task_wdt_isr at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40377245: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x420085b9: app_main at /home/marcos/Esp32/danalogico/main/danalogico.c:69
+0x4201b0ab: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037b395: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[1;31m--- esp_idf_monitor (1.4.0) - ESP-IDF Monitor tool
+--- based on miniterm from pySerial
+---
+--- Ctrl+]   Exit program
+--- Ctrl+T   Menu escape key, followed by:
+--- Menu keys:
+---    Ctrl+T         Send the menu character itself to remote
+---    Ctrl+]         Send the exit character itself to remote
+---    Ctrl+R         Reset target board via RTS line
+---    Ctrl+F         Build & flash project
+---    Ctrl+A (or A)  Build & flash app only
+---    Ctrl+Y         Toggle output display
+---    Ctrl+L         Toggle saving output into file
+---    Ctrl+I (or I)  Toggle printing timestamps
+---    Ctrl+P         Reset target into bootloader via the DTR/RTS lines
+---    Ctrl+X (or X)  Exit program[0m
+[0;33m0x4200b51f: task_wdt_timeout_handling at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x4200b93c: task_wdt_isr at /home/marcos/Esp32/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40377245: _xt_lowint1 at /home/marcos/Esp32/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x420085b9: app_main at /home/marcos/Esp32/danalogico/main/danalogico.c:69
+0x4201b0ab: main_task at /home/marcos/Esp32/esp-idf/components/freertos/app_startup.c:208
+0x4037b395: vPortTaskWrapper at /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x420085bc: app_main at /home/marcos/Esp32/danalogico/main/danalogico.c:71
+[0m
+[0;33m
+Toggle output display: False, Type Ctrl+T Ctrl+Y to show/disable output again.[0m
+[0m

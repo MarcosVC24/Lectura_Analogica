@@ -1,0 +1,1304 @@
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c02002ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403784fe
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (33) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time May 10 2024 10:48:52[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0ef38h ( 61240) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ef60 vaddr=3fc92f00 size=010b8h (  4280) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1ff74h (130932) map[0m
+[0;32mI (157) esp_image: segment 3: paddr=0003ff9c vaddr=3fc93fb8 size=018c8h (  6344) load[0m
+[0;32mI (160) esp_image: segment 4: paddr=0004186c vaddr=40374000 size=0eec4h ( 61124) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (186) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     danalogico[0m
+[0;32mI (215) cpu_start: App version:      1[0m
+[0;32mI (220) cpu_start: Compile time:     May 10 2024 10:48:34[0m
+[0;32mI (226) cpu_start: ELF file SHA256:  0d7d69859...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (250) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC96188 len 00053588 (333 KiB): RAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (270) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (276) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;33mW (283) spi_flash: Octal flash chip is using but dio mode is selected, will automatically swich to Octal mode[0m
+[0;32mI (293) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (298) spi_flash: flash io: opi_str[0m
+[0;33mW (302) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (322) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (329) main_task: Started on CPU0[0m
+[0;32mI (339) main_task: Calling app_main()[0m
+[0;32mI (339) EJERCICIO: adc_pattern[0].atten is :0[0m
+[0;32mI (339) EJERCICIO: adc_pattern[0].channel is :4[0m
+[0;32mI (349) EJERCICIO: adc_pattern[0].unit is :0[0m
+[0;32mI (349) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (359) EJERCICIO: Se ha generado la primera configuración correctamente[0m
+[0;32mI (1369) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1369) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 1000[0m
+[0;32mI (1369) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1379) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1389) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1389) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1399) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1399) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1409) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1419) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1429) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1429) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1439) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1439) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1449) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1459) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1469) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1469) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1479) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1479) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1489) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1499) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1509) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1509) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1519) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1519) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1529) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1539) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1549) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1549) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1559) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1559) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1569) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1579) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1589) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1589) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1599) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1599) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1609) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1619) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1629) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1629) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1639) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1639) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1649) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1659) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1669) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1669) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1679) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1679) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1689) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1699) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1709) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1709) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1719) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1719) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1729) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1739) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1749) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1749) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1759) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1759) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1769) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1779) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1789) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1789) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1799) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1799) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1809) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1819) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1829) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1829) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1839) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1839) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1849) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1859) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1859) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1869) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1879) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1879) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1889) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1899) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1899) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1909) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1919) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1919) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1929) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1939) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1939) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1949) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1959) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1959) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (1969) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1979) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1979) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1989) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (1999) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (1999) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2009) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2019) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2019) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2029) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2039) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2039) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2049) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2059) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2059) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2069) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2079) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2079) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2089) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2099) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2099) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2109) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2119) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2119) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2129) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2139) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2139) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2149) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2159) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2159) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2169) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2179) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2179) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2189) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2199) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2199) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2209) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2209) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2219) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2229) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2239) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2239) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2249) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2249) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2259) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2269) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2279) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2279) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2289) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2289) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2299) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2309) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2319) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2319) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2329) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2329) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2339) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2349) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2359) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2359) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2369) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2369) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2379) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2389) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2399) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2399) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2409) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2409) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2419) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2429) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2439) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2439) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2449) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2449) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2459) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2469) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2479) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2479) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2489) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2489) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2499) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2509) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2519) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2519) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2529) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2529) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2539) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2549) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2559) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2559) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2569) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2569) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2579) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2589) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2599) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2599) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2609) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2609) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2619) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2629) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2639) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2639) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2649) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2649) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2659) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2669) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2669) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2679) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2689) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2689) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2699) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2709) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 50, Voltage: 0.01, Contador: 5[0m
+[0;32mI (2709) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2719) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2729) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2729) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2739) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2749) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2749) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2759) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2769) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2769) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2779) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2789) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2789) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2799) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2809) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2809) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2819) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2829) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2829) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2839) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2849) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2849) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2859) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2869) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2869) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2879) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2889) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2889) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2899) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2909) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2909) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2919) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2929) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2929) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2939) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2949) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2949) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2959) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (2969) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2969) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2979) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2989) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (2989) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (2999) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3009) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3009) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3019) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3029) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3029) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3039) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3049) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3049) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3059) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3059) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3069) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3079) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3089) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3089) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3099) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3099) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3109) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3119) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3129) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3129) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3139) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3139) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3149) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3159) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3169) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3169) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3179) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3179) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3189) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3199) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3209) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3209) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3219) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3219) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3229) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3239) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3249) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3249) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3259) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3259) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3269) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3279) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3289) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3289) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3299) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3299) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3309) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3319) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3329) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3329) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3339) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3339) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3349) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3359) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3369) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3369) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3379) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3379) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3389) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3399) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3409) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3409) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3419) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3419) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3429) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3439) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3449) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3449) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3459) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3459) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3469) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3479) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3489) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3489) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3499) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3499) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3509) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3519) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3529) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3529) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3539) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3539) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3549) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3559) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3559) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3569) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3579) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3579) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3589) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3599) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3599) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3609) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3619) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3619) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3629) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3639) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3639) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3649) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3659) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3659) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3669) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3679) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3679) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3689) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3699) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3699) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3709) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3719) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3719) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3729) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3739) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3739) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3749) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3759) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3759) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3769) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3779) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3779) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3789) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3799) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3799) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3809) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3819) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3819) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3829) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3839) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3839) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3849) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3859) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3859) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3869) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3879) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3879) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3889) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3899) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3899) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3909) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3909) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3919) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3929) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3939) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3939) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3949) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3949) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3959) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3969) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3979) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3979) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (3989) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (3989) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (3999) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4009) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4019) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4019) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4029) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4029) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4039) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4049) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4059) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4059) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4069) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4069) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4079) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4089) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4099) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4099) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4109) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4109) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4119) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4129) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4139) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4139) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4149) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4149) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4159) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4169) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4179) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4179) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4189) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4189) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4199) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4209) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4219) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4219) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4229) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4229) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4239) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4249) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4259) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4259) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4269) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4269) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4279) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4289) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4299) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4299) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4309) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4309) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4319) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4329) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4339) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4339) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4349) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4349) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4359) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4369) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4369) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4379) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4389) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4389) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4399) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4409) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4409) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4419) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4429) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4429) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4439) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4449) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4449) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4459) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4469) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4469) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4479) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4489) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4489) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4499) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4509) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4509) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4519) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4529) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4529) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4539) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4549) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4549) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4559) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4569) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4569) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4579) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4589) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4589) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4599) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4609) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4609) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4619) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4629) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4629) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4639) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4649) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4649) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4659) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4669) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4669) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4679) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4689) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4689) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4699) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4709) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4709) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4719) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4719) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4729) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4739) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4749) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4749) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4759) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4759) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4769) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4779) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4789) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4789) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4799) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4799) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4809) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4819) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4829) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4829) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4839) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4839) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4849) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4859) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4869) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4869) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4879) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4879) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4889) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4899) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4909) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4909) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4919) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4919) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4929) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4939) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4949) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4949) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (4959) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4959) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4969) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4979) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4989) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4989) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (4999) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (4999) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5009) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5019) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5029) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5029) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5039) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5039) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5049) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5059) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5069) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5069) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5079) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5079) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5089) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5099) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5109) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5109) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5119) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5119) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5129) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5139) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5149) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5149) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5159) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5159) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5169) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5179) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5179) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5189) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5199) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5199) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5209) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5219) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 9, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5219) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5229) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5239) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5239) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5249) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5259) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5259) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5269) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 8, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5279) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5279) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5289) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5299) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5299) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5309) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5319) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5319) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5329) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5339) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5339) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5349) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5359) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5359) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5369) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5379) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5379) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5389) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5399) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5399) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5409) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5419) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5419) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5429) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5439) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5439) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5449) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5459) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5459) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5469) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5479) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5479) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5489) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5499) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5499) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5509) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5519) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5519) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5529) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5539) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5539) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5549) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5559) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5559) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5569) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5569) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5579) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5589) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5599) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5599) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5609) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5609) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5619) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5629) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5639) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5639) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5649) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5649) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 28, Voltage: 0.01, Contador: 5[0m
+[0;32mI (5659) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5669) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5679) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5679) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5689) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5689) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5699) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5709) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5719) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5719) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5729) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5729) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5739) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5749) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5759) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5759) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5769) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5769) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5779) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5789) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5799) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5799) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5809) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5809) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5819) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5829) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5839) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5839) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5849) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5849) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 39, Voltage: 0.01, Contador: 5[0m
+[0;32mI (5859) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5869) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5879) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5879) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5889) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5889) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5899) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5909) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 203, Voltage: 0.05, Contador: 5[0m
+[0;32mI (5919) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5919) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5929) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5929) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5939) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5949) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5959) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5959) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 41, Voltage: 0.01, Contador: 5[0m
+[0;32mI (5969) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5969) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (5979) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5989) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (5999) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (5999) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (6009) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6009) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (6019) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6029) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (6039) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6039) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (6049) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6049) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (6059) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6069) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (6079) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6079) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (6089) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6089) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (6099) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6109) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (6119) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6119) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (6129) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6129) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (6139) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6149) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (6149) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6159) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 4[0m
+[0;32mI (6169) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6169) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 5[0m
+[0;32mI (6369) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6439) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 2[0m
+[0;32mI (6449) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6459) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6459) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6469) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6479) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6479) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6489) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6499) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6499) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6509) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6519) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6519) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6529) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6539) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6539) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6549) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6559) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6559) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6569) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6579) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6579) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6589) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6599) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6599) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6609) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6619) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6619) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6629) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6639) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6639) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6649) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6659) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6659) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6669) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6679) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6679) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6689) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6699) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6699) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6709) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6719) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6719) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6729) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6739) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6739) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6749) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6759) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6759) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6769) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6769) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6779) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6789) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6799) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6799) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6809) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6809) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6819) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6829) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6839) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6839) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6849) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6849) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6859) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6869) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6879) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6879) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6889) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6889) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6899) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6909) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6919) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6919) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6929) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6929) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6939) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6949) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6959) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6959) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6969) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6969) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6979) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6989) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (6999) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (6999) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7009) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7009) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7019) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7029) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7039) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7039) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7049) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7049) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7059) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7069) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7079) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7079) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7089) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7089) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7099) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7109) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7119) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7119) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7129) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7129) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 7, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7139) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7149) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7159) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7159) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7169) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7169) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7179) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7189) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7199) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7199) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7209) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7209) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7219) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7229) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7239) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7239) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7249) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7249) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7259) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7269) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7269) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7279) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7289) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7289) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7299) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7309) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7309) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7319) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7329) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7329) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7339) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7349) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7349) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7359) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7369) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7369) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7379) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7389) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7389) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7399) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7409) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7409) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7419) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7429) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7429) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7439) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7449) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7449) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7459) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7469) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7469) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7479) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7489) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7489) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7499) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7509) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7509) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7519) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7529) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7529) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7539) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7549) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7549) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7559) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7569) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7569) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7579) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7589) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7589) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7599) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7609) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7609) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7619) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7619) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7629) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7639) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7649) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7649) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7659) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7659) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7669) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7679) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7689) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7689) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7699) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7699) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7709) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7719) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7729) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7729) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7739) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7739) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7749) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7759) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7769) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7769) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7779) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7779) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7789) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7799) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7809) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7809) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7819) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7819) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7829) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7839) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7849) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7849) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7859) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7859) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7869) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7879) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7889) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7889) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7899) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7899) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7909) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7919) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7929) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7929) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 103, Voltage: 0.03, Contador: 0[0m
+[0;32mI (7939) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7939) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7949) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7959) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7969) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7969) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7979) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7979) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (7989) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (7999) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8009) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8009) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8019) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8019) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8029) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8039) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8049) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8049) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8059) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8059) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8069) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8079) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8089) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8089) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8099) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8099) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8109) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8119) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8119) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8129) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8139) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8139) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8149) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8159) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8159) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8169) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8179) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8179) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8189) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8199) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8199) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8209) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8219) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8219) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8229) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8239) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8239) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8249) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8259) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8259) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8269) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8279) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8279) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8289) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8299) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8299) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8309) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8319) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8319) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8329) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8339) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8339) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8349) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8359) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 265, Voltage: 0.06, Contador: 0[0m
+[0;32mI (8359) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8369) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8379) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8379) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8389) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8399) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 45, Voltage: 0.01, Contador: 0[0m
+[0;32mI (8399) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8409) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8419) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8419) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8429) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8439) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8439) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8449) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8459) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8459) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8469) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8479) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8479) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8489) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8499) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8499) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8509) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8519) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8519) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8529) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 4, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8539) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8539) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8549) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8549) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8559) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8569) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 107, Voltage: 0.03, Contador: 0[0m
+[0;32mI (8579) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8579) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8589) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8589) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8599) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8609) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 6, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8619) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8619) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8629) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8629) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8639) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8649) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8659) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8659) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8669) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8669) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8679) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8689) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8699) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8699) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8709) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8709) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8719) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8729) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8739) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8739) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8749) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8749) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8759) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8769) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8779) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8779) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8789) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8789) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8799) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8809) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8819) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8819) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8829) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8829) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8839) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8849) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8859) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8859) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8869) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8869) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8879) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8889) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8899) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8899) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8909) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8909) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8919) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8929) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8939) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8939) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8949) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8949) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8959) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8969) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8979) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8979) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8989) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (8989) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (8999) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9009) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9019) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9019) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9029) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9029) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9039) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9049) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9059) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9059) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9069) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9069) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9079) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9089) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9089) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9099) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9109) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9109) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9119) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9129) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9129) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9139) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9149) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9149) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9159) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9169) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9169) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9179) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9189) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9189) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9199) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9209) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9209) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9219) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9229) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9229) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9239) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9249) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9249) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9259) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9269) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9269) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9279) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9289) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9289) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9299) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9309) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9309) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9319) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9329) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9329) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9339) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9349) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9349) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9359) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9369) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9369) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9379) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9389) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9389) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9399) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9409) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9409) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9419) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9429) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9429) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9439) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9439) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9449) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9459) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9469) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9469) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9479) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9479) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9489) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9499) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9509) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9509) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9519) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9519) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9529) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9539) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9549) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9549) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9559) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9559) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9569) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9579) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9589) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9589) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9599) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9599) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9609) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9619) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9629) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9629) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9639) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9639) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9649) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9659) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9669) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9669) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9679) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9679) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9689) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9699) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9709) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9709) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9719) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9719) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9729) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9739) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9749) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9749) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9759) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9759) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9769) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9779) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9789) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9789) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9799) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9799) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9809) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9819) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9829) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9829) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m
+[0;32mI (9839) TASK: ret is 0, ret_num is 4 bytes[0m
+[0;32mI (9839) EJERCICIO: Unit: ADC_UNIT, Channel: 4, Value: 0, Voltage: 0.00, Contador: 0[0m

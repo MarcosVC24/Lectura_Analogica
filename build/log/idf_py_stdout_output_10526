@@ -1,0 +1,17 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/marcos/Esp32/danalogico/build/bootloader/esp-idf/esptool_py && /home/marcos/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/marcos/Esp32/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/marcos/Esp32/danalogico/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/danalogico.c.obj
+/home/marcos/Esp32/danalogico/main/danalogico.c: In function 'app_main':
+/home/marcos/Esp32/danalogico/main/danalogico.c:26:84: warning: passing argument 6 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+   26 |         xTaskCreate(adc_init, "ADC initiation", configMINIMAL_STACK_SIZE, NULL, 4, &adc_handle);
+      |                                                                                    ^~~~~~~~~~~
+      |                                                                                    |
+      |                                                                                    struct adc_continuous_ctx_t **
+In file included from /home/marcos/Esp32/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:20,
+                 from /home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:1533,
+                 from /home/marcos/Esp32/danalogico/main/danalogico.c:4:
+/home/marcos/Esp32/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:376:50: note: expected 'struct tskTaskControlBlock ** const' but argument is of type 'struct adc_continuous_ctx_t **'
+  376 |                             TaskHandle_t * const pxCreatedTask ) PRIVILEGED_FUNCTION
+      |                             ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
